@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222D89;
+    color: white;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+#logo{
+    width: 150px;
+    padding-left: 50px;
+}
+.link{
+padding-top: 15px;
+padding-right: 50px;
+font-size: 20px;
+}
+a{
+    margin-left: 90px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.hero #main-photo{
+    width: 500px;
+    padding-right: 50px;
+    border-radius: 0px 0px 0px 500px;
+}
+.hero .contanier{
+    padding-left: 50px;
+}
+.hero .contanier h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.hero .contanier .main-text{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-top: 50px;
+}
+.hero .contanier .main-text .arabic-text{
+    padding-left: 100px;
+}
+.hero .contanier .main-text h2{
+    padding-bottom: 10px;
+}
+.hero .contanier  img {
+    width: 30px;
+    padding-top: 20px;
+}
+.hero .contanier .contact-logo{
+    display: flex;
+    justify-content: start;
+}
+.hero .contanier .contact-logo h3 {
+    padding-left: 20px;
+    padding-top: 30px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.contact-container{
+    color: white;
+    width: 1000px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contact-container .text{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-container form {
+    background-color: white;
+    width: 1000px;
+    margin-top: 20px;
+    color: black;
+    text-align: start;
+    border-radius: 20px;
+    font-size: 25px;
+    padding-left: 40px;
+}
+.contact-container form label{
+    padding-top: 10px;
+}
+.contact-container input{
+    width: 950px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: 1px solid #222D89;
+    font-size: 20PX;
+    padding-left: 10PX;
+
+}
+.contact-container input:hover{
+    border: 2px solid #0c1564;
+}
+.contact-container textarea{
+    width: 950px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: 1px solid #222D89;
+    font-size: 20PX;
+    padding-left: 10PX;
+}
+.contact-container textarea:hover{
+    border: 2px solid #0c1564;
+}
+.contact-container button {
+    width: 950px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    background-color: #222D89;
+    color: white;
+    font-size: 25px;
+}
+
