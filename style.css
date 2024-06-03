@@ -5,6 +5,7 @@
 body{
     background-color: #222D89;
     color: white;
+    font-family:'Bell MT','Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
 }
 nav{
     background-color: white;
@@ -14,11 +15,11 @@ nav{
 }
 #logo{
     width: 150px;
-    padding-left: 50px;
+    padding-left: 140px;
 }
 .link{
 padding-top: 15px;
-padding-right: 50px;
+padding-right: 150px;
 font-size: 20px;
 }
 a{
@@ -31,8 +32,7 @@ a{
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-    width: 1500px;
-
+    height: 100vh;
 }
 .hero .main-text-block{
     display: none;
@@ -55,6 +55,9 @@ a{
     font-size: 20px;
     padding-top: 50px;
 }
+.hero .contanier .main-text .text{
+    padding-top: 20px;
+}
 .hero .contanier .main-text .arabic-text{
     padding-left: 100px;
 }
@@ -63,7 +66,7 @@ a{
 }
 .hero .contanier  img {
     width: 30px;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 .hero .contanier .contact-logo{
     display: flex;
@@ -71,7 +74,7 @@ a{
 }
 .hero .contanier .contact-logo h3 {
     padding-left: 20px;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 main{
     display: flex;
@@ -79,7 +82,7 @@ main{
 }
 .contact-container{
     color: white;
-    width: 1000px;
+    height: 100vh;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -87,19 +90,24 @@ main{
 .contact-container .text{
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-top: 50px;
 }
 .contact-container form {
     background-color: white;
-    width: 1000px;
     margin-top: 20px;
+    padding-top: 50px;
     color: black;
     text-align: start;
     border-radius: 20px;
     font-size: 25px;
     padding-left: 40px;
+    height: 600px;
+    width: 950px;
 }
 .contact-container input{
-    width: 950px;
+    width: 900px;
     height: 40px;
     border-radius: 10px;
     margin: 10px 0px;
@@ -112,8 +120,8 @@ main{
     border: 2px solid #0c1564;
 }
 .contact-container textarea{
-    width: 950px;
-    height: 200px;
+    width: 900px;
+    height: 250px;
     border-radius: 10px;
     margin: 10px 0px;
     border: 1px solid #222D89;
@@ -124,8 +132,8 @@ main{
     border: 2px solid #0c1564;
 }
 .contact-container button {
-    width: 950px;
-    height: 40px;
+    width: 920px;
+    height: 50px;
     border-radius: 10px;
     margin: 10px 0px;
     background-color: #222D89;
@@ -150,7 +158,7 @@ footer p{
        font-size: 100%;
     }
 }
-@media screen and (max-width:956px){
+/* @media screen and (max-width:956px){
     .hero #main-photo{
         width: 350px;
         height: 300px;
@@ -167,8 +175,8 @@ footer p{
         padding-top: 30px;
         font-size: 15px;
     }
-}
-@media screen and (max-width:904px) {
+} */
+/* @media screen and (max-width:904px) {
     .hero .contanier .main-text{
         font-size: 15px;
      }
@@ -183,18 +191,32 @@ footer p{
      .hero .contanier h1 {
         font-size: 30px;
     }
-}
-@media screen and (max-width:768px) {
+} */
+@media screen and (max-width:900px) {
+    #logo{
+        width: 150px;
+        padding-left: 90px;
+    }
+    .link{
+    padding-right: 70px;
+    }
+    a{
+        margin-left: 20px;
+    }
+    nav .link a{
+        padding-right: 30px;
+    }
     .hero{
         display: block;
+        height: 100vh;
     }
     .hero #main-photo{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 78%;
-        border-radius: 20px ;
-        padding: 0;
+        border-radius: 20px  ;
+        padding-right: 0;
     }
     .hero .contanier {
         display: none;
@@ -204,22 +226,27 @@ footer p{
 
     }
     .hero .main-text-block h1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 78%;
+        padding-top: 20px;
         font-size: 30px;
+        text-align: center;
     }
     .hero .main-text-block .main-text-area {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        text-align: center;
-        margin-top: 40px;
+        margin-top: 20px;
+        width: 85%;
+        height: 30%;
     }
     .hero .main-text-block .card{
         background-color: white;
-        width: 280px;
-        height: 100px;
+        margin: 30px;
         border-radius: 10px;
         font-size: 15px;
         color: black;
-        margin: 20px;
         text-align: center;
         margin-bottom: 0;
     }
@@ -229,17 +256,167 @@ footer p{
     .hero .main-text-block .contact-logo{
         display: flex;
         justify-content: start;
-        padding-left: 30px; 
+        margin-left: -220px; 
         padding-top: 10px;
     }
     .hero .main-text-block .contact-logo #contact-logo{
         width: 40px;
+        margin-top: 20px;
     }
     .hero .main-text-block .contact-logo h3{
-        padding-top: 10px;
+        padding-top: 30px;
         padding-left: 10px;
-        
+    }
+    
+
+}
+@media screen and (max-width:800px){
+    .hero .main-text-block h1 {
+        font-size: 35px;
+    }
+    .hero .main-text-block .main-text-area {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 20px;
+        height: 50%;
+    }
+    .hero .main-text-block .card{
+        font-size: 20px;
+        color: black;
+    }
+    .hero .main-text-block .contact-logo{
+        font-size: 20px;
+        margin-left: -170px;
+    }
+    .hero .main-text-block .contact-logo #contact-logo{
+        width: 40px;
+        margin-top: 20px;
+    }
+    .hero .main-text-block .contact-logo h3{
+        padding-top: 30px;
+        padding-left: 10px;        
+        font-weight: 100;
     }
 
 }
+@media screen and (max-width:768px){
+    .hero{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:450px){
+    #logo{
+        padding-left: 40px;
+        height: 40px;
+        width: 120px;
+    }
+    .link{
+    padding-right: 10px;
+    }
+    a{
+        margin-left: 5px;
+    }
+    .hero .main-text-block h1{
+        font-size: 30px;
+    }
+    .hero .main-text-block .main-text-area {
+        height: 50%;
+    }
+    .hero .main-text-block .card{
+        font-size: 18px;
+    }
+    .hero .main-text-block div h2{
+        padding-top: 20px;        
+    }
+    .hero .main-text-block .contact-logo{
+        margin-left: 70px; 
+        padding-top: 20px;
+    }
+    .hero .main-text-block .contact-logo #contact-logo{
+        width: 30px;
+        height: 40px;
+    }
+    .hero .main-text-block .contact-logo h3{
+        padding-left: 20px;
+        padding-right: 70px;
+
+    }
+
+}
+@media screen and (max-width:390px){
+    .hero .main-text-block h1{
+        font-size: 25px;
+    }
+    .hero .main-text-block .card{
+        font-size: 15px;
+    }
+    .hero .main-text-block .contact-logo{
+        margin-left: 60px; 
+        padding-top: 20px;
+    }
+    .hero .main-text-block .contact-logo #contact-logo{
+        height: 30px;
+    }
+}
+@media screen and (max-width:393px){
+    .hero .main-text-block h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:360px){
+    .link{
+    padding-right: 0px;
+    }
+    a{
+        margin-left: 0px;
+    }
+    .hero .main-text-block .contact-logo h3{
+        padding-left: 20px;
+        padding-right: 60px;
+
+    }
+}
+@media screen and (max-width:320px){
+    #logo{
+        width: 100px;
+        height: 30px;
+        padding-left: 20px;
+    }
+    .link{
+    padding-right:0px;
+    padding-top: 8px;
+    font-size: 17px;
+    }
+    a{
+        margin-left: 0px;
+    }
+    .hero #main-photo{
+        margin-top: -30px;
+    }
+    .hero .main-text-block h1{
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .hero .main-text-block .card{
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+    .hero .main-text-block .logo-container{
+        margin-top: 100px;
+    }
+    .hero .main-text-block .contact-logo{
+        font-size: 14px;
+    }
+    .hero .main-text-block .contact-logo #contact-logo{
+        margin-top: 4px;        
+    }
+    .hero .main-text-block .contact-logo h3{
+        padding-top: 13px;
+    }
+    footer p {
+        font-size: 15px;
+    }
+
+}
+
 
