@@ -97,13 +97,13 @@ main{
 .contact-container form {
     background-color: white;
     margin-top: 20px;
-    padding-top: 50px;
+    padding-top: 20px;
     color: black;
     text-align: start;
     border-radius: 20px;
     font-size: 25px;
     padding-left: 40px;
-    height: 580px;
+    height: 480px;
     width: 950px;
 }
 .contact-container input{
@@ -121,7 +121,7 @@ main{
 }
 .contact-container textarea{
     width: 900px;
-    height: 250px;
+    height: 150px;
     border-radius: 10px;
     margin: 10px 0px;
     border: 1px solid #222D89;
