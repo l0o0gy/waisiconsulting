@@ -72,9 +72,25 @@ a{
     display: flex;
     justify-content: start;
 }
-.hero .contanier .contact-logo h3 {
-    padding-left: 20px;
+.hero .contanier .contact-logo #map {
+    margin-left: 10px;
     padding-top: 60px;
+    font-size: 20px;
+    color: white;
+}
+.hero .contanier .whatsappCotact{
+    margin-left: -70px;
+    margin-top: 20px;
+}
+.hero .contanier .whatsappCotact #watsapp-logo:hover{
+    box-shadow: 5px 0px 5px 0px  rgb(190, 189, 189);
+
+}
+.hero .contanier .whatsappCotact #watsapp-logo{
+    width: 200px;
+    border-radius: 20px;
+    padding: 0;
+    margin: 20px -30px;
 }
 main{
     display: flex;
@@ -260,27 +276,50 @@ footer p{
         background-color: white;
         margin: 30px;
         border-radius: 10px;
-        font-size: 15px;
+        font-size: 20px;
         color: black;
         text-align: center;
         margin-bottom: 0;
+        box-shadow: 5px 5px 5px 5px #5d6ff0b0;
+
     }
-    .hero .main-text-block div h2{
+    .hero .main-text-block .card:hover{
+        box-shadow: 5px 5px 5px 5px #c9cad1;
+    }
+    .hero .main-text-block  div h2{
         padding-top: 20px;
     }
-    .hero .main-text-block .contact-logo{
+    .hero .main-text-block .main-text-area .contact-logo{
         display: flex;
         justify-content: start;
-        margin-left: -220px; 
+        /* margin-left: -220px; */
         padding-top: 10px;
     }
-    .hero .main-text-block .contact-logo #contact-logo{
+    .hero .main-text-block  .contact-logo #contact-logo{
         width: 40px;
-        margin-top: 20px;
+        margin-top:20px;
     }
-    .hero .main-text-block .contact-logo h3{
+    /* .hero .main-text-block .main-text-area .contact-logo #map{
         padding-top: 30px;
         padding-left: 10px;
+    } */
+    .hero .main-text-block .whatsappCotact{
+        margin-top: 70px;
+    }
+    .hero .main-text-block .whatsappCotact a{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 30px;
+    }
+    .hero .main-text-block .whatsappCotact a img{
+        border-radius: 10px;
+        background-color: white;
+        padding: 2px 125px;
+        margin-left: -22px;
+    }
+    .hero .main-text-block .whatsappCotact a img:hover{
+        box-shadow: 5px 0px 5px 0px #c9cad1;
+
     }
     .contact-container .text{
         display:grid ;
@@ -288,6 +327,10 @@ footer p{
         text-align: center;
         padding-top: 50px;
         font-size: 28px;
+    }
+    .hero .main-text-block .contact-logo a{
+        color: rgb(221, 219, 219);
+        font-size: 35px;
     }
     .contact-container form {
         height: 800px;
@@ -306,35 +349,71 @@ footer p{
     .contact-container button {
         width: 660px;
     }
+    footer{
+        margin-top: 210px;
+    }
+
 
 }
 @media screen and (max-width:800px){
+    .hero{
+        height: 120vh;
+    }
     .hero .main-text-block h1 {
         font-size: 35px;
     }
     .hero .main-text-block .main-text-area {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
         margin-top: 20px;
-        height: 50%;
+        height: 35%;
+        
     }
     .hero .main-text-block .card{
-        font-size: 20px;
+        font-size: 25px;
         color: black;
+        padding-top: 10px;
+        box-shadow: 5px 5px 5px 5px #5d6ff0b0;
+
+    }
+    .hero .main-text-block .card:hover{
+        box-shadow: 5px 5px 5px 5px #c9cad1;
     }
     .hero .main-text-block .contact-logo{
-        font-size: 20px;
-        margin-left: -170px;
+        margin-left: 90px;
+        color: white;
+        margin-top: 10px;        
+        margin-left: -10px;
+
     }
+    .hero .main-text-block .contact-logo a{
+        color: rgb(221, 219, 219);
+        font-size: 35px;
+    }
+
     .hero .main-text-block .contact-logo #contact-logo{
-        width: 40px;
-        margin-top: 20px;
+        width: 60px;
+        margin-top: 40px;
     }
-    .hero .main-text-block .contact-logo h3{
-        padding-top: 30px;
-        padding-left: 10px;        
-        font-weight: 100;
+    .hero .main-text-block .whatsappCotact{
+        margin-top: 70px;
     }
+    .hero .main-text-block .whatsappCotact a{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 30px;
+    }
+    .hero .main-text-block .whatsappCotact a img{
+        border-radius: 10px;
+        background-color: white;
+        padding: 2px 125px;
+        margin-left: -22px;
+    }
+    .hero .main-text-block .whatsappCotact a img:hover{
+        box-shadow: 5px 0px 5px 0px #c9cad1;
+
+    }
+
     .contact-container .text{
         font-size: 25px;
         padding-top: 60px;
@@ -353,6 +432,9 @@ footer p{
     }
     .contact-container button {
         width: 610px;
+    }
+    footer{
+        margin-top: 0px;
     }
 
 }
@@ -379,7 +461,37 @@ footer p{
     .contact-container button {
         width: 610px;
     }
+    .hero .main-text-block .whatsappCotact a img{
+        padding: 2px 90px;
+        margin-left: 0;
+    }
 }
+@media screen and (max-width:692px){
+    .hero .main-text-block .whatsappCotact a img{
+        padding: 2px 70px;
+    }
+    .hero .main-text-block .main-text-area {
+        height: 30%;
+    }
+    .hero .main-text-block .card{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:548px){
+    .hero .main-text-block .whatsappCotact a{
+        display: flex;
+        justify-content: center;
+    }
+    .hero .main-text-block .whatsappCotact a img{
+        padding: 0;
+        width: 80%;
+    }
+    .hero .main-text-block .main-text-area {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
 @media screen and (max-width:450px){
     #logo{
         padding-left: 40px;
@@ -403,10 +515,10 @@ footer p{
         font-size: 18px;
     }
     .hero .main-text-block div h2{
-        padding-top: 20px;        
+        padding-top: 20px;
     }
     .hero .main-text-block .contact-logo{
-        margin-left: 70px; 
+        margin-left: 70px;
         padding-top: 20px;
     }
     .hero .main-text-block .contact-logo #contact-logo{
@@ -471,7 +583,7 @@ footer p{
         font-size: 15px;
     }
     .hero .main-text-block .contact-logo{
-        margin-left: 60px; 
+        margin-left: 60px;
         padding-top: 20px;
     }
     .hero .main-text-block .contact-logo #contact-logo{
@@ -486,7 +598,7 @@ footer p{
         width: 330px;
     }
     .contact-container input{
-        width: 280px; 
+        width: 280px;
     }
     .contact-container textarea{
         width: 280px;
@@ -509,7 +621,7 @@ footer p{
         width: 310px;
     }
     .contact-container input{
-        width: 270px; 
+        width: 270px;
     }
     .contact-container textarea{
         width: 270px;
@@ -517,6 +629,18 @@ footer p{
     }
     .contact-container button {
         width: 280px;
+    }
+    .hero .main-text-block .whatsappCotact a img{
+        padding: 0;
+        width: 70%;
+    }
+    .hero .main-text-block .contact-logo a{
+        font-size: 25px;
+    }
+
+    .hero .main-text-block .contact-logo #contact-logo{
+        width: 30px;
+        margin-top: 0px;
     }
 }
 @media screen and (max-width:360px){
